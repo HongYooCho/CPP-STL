@@ -10,16 +10,16 @@
   
 선언방법은 다음과 같다.  
   
-{% highlight cpp %}  
+```cpp    
 - bitset<8> bit;         // 0,0,0,0,0,0,0,0  
 - bitset<8> bit(16)      // 0,0,0,0,1,0,0,0  
 - bitset<8> bit("10101") // 0,0,0,1,0,1,1,0  
   
-{% endhighlight %}  
+```  
   
 bit 안에 변수를 확인하는 방법은 다음과 같다.  
 
-{% highlight cpp %}  
+```cpp  
 bitset<8> b(18); .. // 0,0,0,1,0,0,1,0  
 
 for(int i = 0 ; i < b.size(); i++) {
@@ -27,11 +27,11 @@ for(int i = 0 ; i < b.size(); i++) {
 	// 참고로 작은 비트(오른쪽비트) 가 0 이다.
 }
 
-{% endhighlight %}
+```  
   
 bitset의 명력어론 다음과 같다.  
 
-{% highlight cpp %}  
+```cpp   
 bitset<10> b(88);   // 0,0,0,1,0,1,1,0,0,0  
 cout << b << '\n';  // 0001011000
 
@@ -58,10 +58,10 @@ cout << b << '\n'; // 1,1,1,1,1,1,1,1,1,1
 b.reset(); 
 cout << b << '\n'; // 0,0,0,0,0,0,0,0,0,0
 
-{% endhighlight %}  
+```  
   
 변수안에 비트 개수를 세거나 확인하는 연산은 다음과 같다.  
-{% highlight cpp %}   
+```cpp    
 bitset<8> b(18); // 0,0,0,1,0,0,1,0
 
 cout << b << '\n' //0001011000
@@ -71,10 +71,10 @@ cout << b.any()  << '\n' // true
 cout << b.none() << '\n' // false
 cout << b.count()<< '\n' // 2
 
-{% endhighlight %}    
+```  
   
 마지막으로 변수끼리 & , | , ^(xor) , ~ 연산이 가능하다.  
-{% highlight cpp %}  
+```cpp  
 bitset<8> bit1(18); // 0,0,0,1,0,0,1,0
 bitset<8> bit2(6);  // 0,0,0,0,0,1,1,0
 
@@ -89,5 +89,5 @@ cout << (bit2 >> 2)   << '\n'; // 00000001
 cout << ~(bit1)       << '\n'; // 11101101
 
 
-{% endhighlight %}   
+```  
 
