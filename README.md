@@ -2,7 +2,7 @@
 ## C++의 STL을 간략하게 정리 할 페이지 입니다.
 
 
-## List
+# List
 
 0. :star: bitset
 1. vector
